@@ -1,6 +1,5 @@
 var windowWidth = $(window).width();
 var windowHeight = $(window).height();
-var executed = false;
 
 
 function randomPositions(wWidth,wHeight){
@@ -21,7 +20,7 @@ function randomPositions(wWidth,wHeight){
         'height': + (starSize) + 'px'
     });
 
-    $newStar.appendTo('.frontPageContainer')
+    $newStar.appendTo('.front-page-container')
 }
 
 

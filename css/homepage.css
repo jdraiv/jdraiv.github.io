@@ -1,25 +1,29 @@
-
 /* MainBlack #141726 */  
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 
 body{
     padding: 0;
     margin: 0;
     overflow: auto;
+    font-family: 'Montserrat', bold;
 }
 
-.webpageContainer{
+.webpage-container{
     overflow: auto;
 }
 
-.star{
-    position: absolute;
-    border-radius: 50%;
-    background-color: white;
-}
-
-
 /* First Page */
-.frontPageContainer{
+.front-page-container{
     display: block;
     width: 100%;
     height: 662px;
@@ -28,21 +32,19 @@ body{
     color: white;
 }
 
-
-
-#frontPageHeader{
+#front-page-header{
     font-size: 4em;
     text-align: center;
     line-height: 600px;
     vertical-align: middle;
 }
 
-#myInfo{
+#my-info{
     margin-top: -240px;
 }
 
 /*Second Page */
-.projectsPageContainer{
+.projects-page-container{
     display: block;
     position: absolute;
     width: 100%;
@@ -50,97 +52,31 @@ body{
     margin-top: -1px;
     background-color: #191B26;
     border-color: none;
+    overflow: auto;
 }
 
-#projectsText{
+#projects-text{
     color: white;
     text-align: center;
     font-size: 3.5em;
-    font-family: 'Montserrat', bold;
 }
 
-
-.flex-container {
-  padding: 0;
-  margin: 0;
-  margin-top: 5%;
-  list-style: none;
-  border: 1px solid silver;
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-}
-
-.wrap{ 
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  border: none;
-}
-
-.wrap li {
-  background: #141726;
-}
-
-.flex-item {
-  padding: 5px;
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 100px;
-  color: white;
-  font-weight: bold;
-  font-size: 2em;
-  text-align: center;
-  font-family: 'Montserrat', bold;
-}
-
-
-/* Footer */
-.footerContainer{
-    display: block;
-    position: fixed;
-    width: 100%;
-    height: 10%;
-    bottom: 0;
-    background-color: #141726;
+.projects-url{
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin-left: 10%;
+    color: white;
     text-align: center;
 }
 
-.footerBtns{
-    width: 60px;
-    height: 90%;
-    margin-top: 0.3%;
-    background-color: #191B26;
-    color: white;
-    border: none;
-    font-size: 40px;
-    border-radius: 5px;
-}
-
-
-/* Navbar Customization */
-
-.navbarContainer{
-    position: absolute;
-    width: 98%;
-    margin-top: 1%;
-    text-align: right;
-}
-
-li{
-    display: inline;
-    list-style-type: none;
-}
-
-.navbarLinkItems{
-    padding-right: 28px;
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
+.projects-url-item{
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
 }
 
 a{
@@ -148,25 +84,15 @@ a{
     text-decoration: none;
 }
 
-
-
 /* Details make perfect */
 
 a:hover{
     color: grey;
 }
 
-/* Star animation */
-.star {
-  animation: blinker 5s linear infinite;
+.projects-url-item:hover{
+    background-color: #141726;
 }
-
-@keyframes blinker {  
-  50% { opacity: 0.2; }
-}
-
-
-
 
 /* Media Queries*/
 
