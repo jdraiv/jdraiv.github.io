@@ -2,6 +2,10 @@
     {
         "name": "Url-Shortener",
         "link": "https://brurl.herokuapp.com/"
+    },
+    {
+        "name": "Weather App",
+        "link": "https://mypyweatherapp.herokuapp.com/"
     }
 ]
       
