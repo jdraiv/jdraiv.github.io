@@ -6,6 +6,14 @@
     {
         "name": "Weather App",
         "link": "https://mypyweatherapp.herokuapp.com/"
+    },
+    {
+        "name": "Couse",
+        "link": "https://couse-app.herokuapp.com"
+    },
+    {
+        "name": "XO bot",
+        "link": "https://github.com/jdraiv/Sai/blob/master/xo/xo.py"
     }
 ]
       
