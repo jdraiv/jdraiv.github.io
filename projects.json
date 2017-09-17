@@ -1,19 +1,23 @@
 [
     {
         "name": "Url-Shortener",
-        "link": "https://brurl.herokuapp.com/"
+        "link": "https://brurl.herokuapp.com/",
+        "description": "Simple, url shortener app."
     },
     {
         "name": "Weather App",
-        "link": "https://mypyweatherapp.herokuapp.com/"
+        "link": "https://mypyweatherapp.herokuapp.com/",
+        "description": "Weather app built with Python using the Flask framework."
     },
     {
         "name": "Couse",
-        "link": "https://couse-app.herokuapp.com"
+        "link": "https://couse-app.herokuapp.com",
+        "description": "Couse is a web application that helps you save, and organize code snippets."
     },
     {
         "name": "XO bot",
-        "link": "https://github.com/jdraiv/Sai/blob/master/xo/xo.py"
+        "link": "https://github.com/jdraiv/Sai/blob/master/xo/xo.py",
+        "description": "XO bot that uses ML to play."
     }
 ]
       
