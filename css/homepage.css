@@ -1,4 +1,9 @@
-/* MainBlack #141726 */  
+/* MainBlack #141726 */ 
+
+:root{
+    --main-dark: #141726;
+    --soft-dark: #191B26;
+}
 
 html {
     overflow: scroll;
@@ -27,7 +32,7 @@ body{
     display: block;
     width: 100%;
     height: 662px;
-    background-color: #141726;
+    background-color: var(--main-dark);
     font-family: 'Montserrat', bold;
     color: white;
 }
@@ -37,10 +42,25 @@ body{
     text-align: center;
     line-height: 600px;
     vertical-align: middle;
+    font-weight: bold;
 }
 
 #my-info{
     margin-top: -240px;
+}
+
+.github-btn{
+    width: 10%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    text-align: center;
+    background-color: var(--soft-dark);
+    color: white;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
 }
 
 /*Second Page */
@@ -50,7 +70,7 @@ body{
     width: 100%;
     height: 80%;
     margin-top: -1px;
-    background-color: #191B26;
+    background-color: var(--soft-dark);
     border-color: none;
     overflow: auto;
 }
@@ -64,10 +84,10 @@ body{
 .projects-url{
     margin: 0;
     padding: 0;
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
     color: white;
     text-align: center;
+    font-weight: bold;
 }
 
 .projects-url-item{
@@ -86,18 +106,28 @@ a{
 
 /* Details make perfect */
 
-a:hover{
+.project-a:hover{
     color: grey;
 }
 
 .projects-url-item:hover{
-    background-color: #141726;
+    background-color: var(--main-dark);
+}
+
+.github-btn:hover{
+    color: grey;
 }
 
 /* Media Queries*/
 
-@media(max-width: 640px){
+@media(max-width: 1024px){
     .flex-item{
         font-size: 1em;
+    }
+    
+    .github-btn{
+        width: 15%;
+        padding-top: 1.2%;
+        padding-bottom: 1.2%;
     }
 }
