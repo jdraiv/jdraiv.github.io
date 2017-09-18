@@ -7,7 +7,7 @@ function getProjects(){
             Object.keys(data).forEach(function(key){
                 name = data[key].name;
                 link = data[key].link;
-                $('.projects-url').append('<li class="projects-url-item"><a href="' + link + '">' + name + '</a></li>')
+                $('.projects-url').append('<li class="projects-url-item"><a href="' + link + '" target="_blank">' + name + '</a></li>')
                 console.log(name, link)
             });
         }
