@@ -18,6 +18,17 @@
         "name": "XO bot",
         "link": "https://github.com/jdraiv/Sai/blob/master/xo/xo.py",
         "description": "XO bot that uses ML to play."
+    },
+    {
+        "name": "Sound Pad",
+        "link": "https://codepen.io/Jdraiv/full/JryveY/",
+        "description": "Soundpad built with JS"
+    },
+    {
+        "name": "TODO ",
+        "link": "https://codepen.io/Jdraiv/full/JryveY/",
+        "description": "Todo app built with React"
     }
+        
 ]
       
