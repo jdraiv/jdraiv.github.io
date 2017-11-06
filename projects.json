@@ -1,6 +1,6 @@
 [
     {
-        "name": "Url-Shortener",
+        "name": "Brurl",
         "link": "https://brurl.herokuapp.com/",
         "description": "Simple, url shortener app."
     },
@@ -10,9 +10,9 @@
         "description": "Weather app built with Python using the Flask framework."
     },
     {
-        "name": "Couse",
-        "link": "https://couse-app.herokuapp.com",
-        "description": "Couse is a web application that helps you save, and organize code snippets."
+        "name": "Snake",
+        "link": "https://github.com/jdraiv/PySnake",
+        "description": "Snake game written in Python."
     },
     {
         "name": "XO bot",
