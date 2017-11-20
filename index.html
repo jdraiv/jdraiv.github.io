@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Homepage</title>
+    <title>Jdraiv</title>
 
     <!-- Css call -->
     <link rel="stylesheet" type="text/css" href="css/homepage.css" />
@@ -24,15 +24,12 @@
     </head>
 
     <body>
-
         <div class="webpage-container">
             <section class="front-page-section">
-
                 <div class="front-page-container">
-
                     <div class="navbar-container">
                         <ul id="navbar-items-container">
-                            <li class="nav-item"><a class="navbar-link-items" href="#projects-page-section">Projects</a></li>
+                            <li class="nav-item"><a class="navbar-link-item" href="#projects-page-section">Projects</a></li>
                         </ul>
                     </div>
 
@@ -43,26 +40,44 @@
                             <button class="github-btn" onclick="window.open('https://github.com/jdraiv', '_blank');">Github</button>
                         </div>
                     </div>
-
                 </div>
-
             </section>
 
             <section id="projects-page-section">
-
                 <div class="projects-page-container">
+                    <div class="project-categories-container">
+                        <h1 id="project-categories-header">Categories</h1>
+                        <ul id="categories-ul">
+                            <!-- Automate this -->
+                            <li><button class="categories-btn" onclick="getCategoryData('web-apps', '#projects-ul')">Web Apps</button></li>
+                            <li><button class="categories-btn" onclick="getCategoryData('games', '#projects-ul')">Games</button></li>
+                            <li><button class="categories-btn" onclick="getCategoryData('other', '#projects-ul')">Other</button></li>
+                        </ul>
 
-                    <h1 id="projects-text">Projects</h1>
-                    <ul class="projects-url">
-                    </ul>
-                    
+                    </div>
+
+                    <div class="project-names-container">
+                        <h1 id="project-names-header">Projects</h1>
+
+                        <ul id="projects-ul">
+
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="footer">
+                <div class="footer-container">
+                    <a class="footer-link" href="https://github.com/jdraiv">Jdraiv ©2017 </a>
+
                 </div>
             </section>
         </div>
+        
 
     <script type="text/javascript" src="/js/stars.js"></script>
     <script type="text/javascript" src="/js/projects.js"></script>
-        
 
     </body>
 </html>
