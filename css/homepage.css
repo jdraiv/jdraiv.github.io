@@ -1,4 +1,4 @@
-/* MainBlack #141726 */ 
+/* I am short of breadth standing next to you. */
 
 :root{
     --main-dark: #141726;
@@ -11,10 +11,9 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+    width: 0;
+    background: transparent;
 }
-
 
 body{
     padding: 0;
@@ -33,7 +32,6 @@ body{
     width: 100%;
     height: 662px;
     background-color: var(--main-dark);
-    font-family: 'Montserrat', bold;
     color: white;
 }
 
@@ -68,35 +66,85 @@ body{
     display: block;
     position: absolute;
     width: 100%;
-    height: 80%;
+    height: 100%;
     margin-top: -1px;
     background-color: var(--soft-dark);
-    border-color: none;
+    border: none;
     overflow: auto;
 }
 
-#projects-text{
+.project-categories-container{
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 5%;
     color: white;
-    text-align: center;
-    font-size: 3.5em;
+    background-color: transparent;
+    border: 2px solid white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
-.projects-url{
-    margin: 0;
-    padding: 0;
-    width: 100%;
+#project-categories-header, #project-names-header{
     color: white;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+#categories-ul, #projects-ul{
+    margin-top: 2%;
+    padding: 0;
     text-align: center;
     font-weight: bold;
 }
 
-.projects-url-item{
-    font-size: 2em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 5px;
-    margin-top: 5px;
-    border-radius: 10px;
+.categories-btn{
+    margin-top: 1%;
+    font-family: 'Montserrat', bold;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.categories-btn:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+.project-names-container{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 48%;
+    background-color: var(--main-dark)
+}
+
+.project-li{
+    margin-top: 2%;
+    font-size: 1.8em;
+}
+
+/* Footer section */
+.footer-container{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    margin-top: 48%;
+    background-color: var(--main-dark);
+}
+
+.footer-link{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 3%;
+    padding-bottom: 1%;
+    font-weight: bold;
 }
 
 a{
@@ -106,15 +154,11 @@ a{
 
 /* Details make perfect */
 
-.project-a:hover{
+.github-btn:hover{
     color: grey;
 }
 
-.projects-url-item:hover{
-    background-color: var(--main-dark);
-}
-
-.github-btn:hover{
+a:hover{
     color: grey;
 }
 
