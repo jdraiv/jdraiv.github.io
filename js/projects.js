@@ -1,17 +1,23 @@
-function getProjects(){
-    $.ajax({
-        dataType: 'json',
-        type: 'GET',
-        url: 'https://raw.githubusercontent.com/jdraiv/jdraiv.github.io/master/projects.json',
-        success: function(data){
-            Object.keys(data).forEach(function(key){
-                name = data[key].name;
-                link = data[key].link;
-                $('.projects-url').append('<li class="projects-url-item"><a href="' + link + '" target="_blank">' + name + '</a></li>')
-                console.log(name, link)
-            });
-        }
-    });
-}
+function getCategoryData(categoryName, projectContainer){
+    let url = "https://raw.githubusercontent.com/jdraiv/jdraiv.github.io/master/data.json";
 
-getProjects();
+    fetch(url)
+        .then(function(data) {
+            // Return json data
+            return data.json();
+        })
+        .then(function(j) {
+            let jsonData = j[0][categoryName];
+            // Remove li elements
+            $(projectContainer).empty();
+            for (let dic of jsonData) {
+                // Append new data
+                $(projectContainer).append(`<li class="project-li"><a href="${dic['link']}" target="_blank">${dic['name']}</a></li>`);
+            }
+        })
+        .catch(function(){
+            // Error
+            console.log("Error");
+        });
+
+}
