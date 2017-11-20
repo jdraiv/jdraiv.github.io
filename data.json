@@ -6,37 +6,37 @@
     "web-apps": [
       {
         "name": "Brurl",
-        "link": "#"
+        "link": "https://brurl.herokuapp.com/"
       },
       {
         "name": "WeatherApp",
-        "link": "#"
+        "link": "https://mypyweatherapp.herokuapp.com/"
       },
       {
         "name": "TODO",
-        "link": "#"
+        "link": "https://codepen.io/Jdraiv/full/JryveY/"
       },
       {
         "name": "Sound Pad",
-        "link": "#"
+        "link": "https://codepen.io/Jdraiv/full/JryveY/"
       }
     ],
 
     "games": [
       {
         "name": "Snake",
-        "link": "#"
+        "link": "https://github.com/jdraiv/PySnake"
       }
     ],
 
     "other": [
       {
         "name": "XO Bot",
-        "link": "#"
+        "link": "https://github.com/jdraiv/Sai/blob/master/xo/xo.py"
       },
       {
         "name": "Flask Auth",
-        "link": "#"
+        "link": "https://github.com/jdraiv/FlaskL"
       }
     ]
 
