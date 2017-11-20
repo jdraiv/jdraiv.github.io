@@ -1,36 +1,48 @@
-var windowWidth = $(window).width();
-var windowHeight = $(window).height();
+function randomPositions(range){
+    function roundNumber(num){
+        return Math.round(num);
+    }
 
+    // Positions container
+    let positions = [];
 
-function randomPositions(wWidth,wHeight){
-    ranWidth = Math.random() * (0, 99);
-    ranWidth = Math.round(ranWidth);
+    let count = 0;
+    while (count <= range){
+        // Random positions variables
+        let ranWidth = roundNumber(Math.random() * (0, 99));
+        let ranHeight = roundNumber(Math.random() * (0, 99));
+        let starSize = roundNumber(Math.random() * (3, 6));
 
-    ranHeight = Math.random() * (0,95);
-    ranHeight = Math.round(ranHeight);
+        // Push values to the container
+        positions.push([ranWidth, ranHeight, starSize]);
 
-    starSize = Math.random() * (3,5);
-    starSize = Math.round(starSize);
+        // Update count variable
+        count += 1
+    }
+    return positions;
+}
 
+function appendDivs(containerName, positionsArray){
+    let divsContainer = document.getElementsByClassName(containerName);
 
-    $newStar = $('<div class="star"></div>').css({
-        'left': +  (ranWidth)  + '%',
-        'top': + (ranHeight)  + '%',
-        'width': + (starSize) + 'px',
-        'height': + (starSize) + 'px'
-    });
+    for (let array of positionsArray){
 
-    $newStar.appendTo('.front-page-container')
+        /*
+        You taught me the courage of stars before you left.
+        How light carries on endlessly, even after death.
+        */
+
+        let newStar = $('<div class="star"></div>').css({
+            'left': `${array[0]}%`,
+            'top': `${array[1]}%`,
+            'width': `${array[2]}px`,
+            'height': `${array[2]}px`
+        });
+
+        newStar.appendTo(containerName);
+    }
 }
 
 
-function killTheDarkness(){
-    randomPositions(windowWidth,windowHeight);
-}
-
-
-var stars = 0;
-while(stars < 35){
-    killTheDarkness();
-    stars = stars + 1;
-}
+appendDivs(".front-page-container", randomPositions(35));
+appendDivs(".footer-container", randomPositions(35));
