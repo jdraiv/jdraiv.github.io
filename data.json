@@ -3,7 +3,7 @@
 [
   {
 
-    "web-apps": [
+    "Webpages": [
       {
         "name": "Brurl",
         "link": "https://brurl.herokuapp.com/"
@@ -22,14 +22,14 @@
       }
     ],
 
-    "games": [
+    "Game": [
       {
         "name": "Snake",
         "link": "https://github.com/jdraiv/PySnake"
       }
     ],
 
-    "other": [
+    "Other": [
       {
         "name": "XO Bot",
         "link": "https://github.com/jdraiv/Sai/blob/master/xo/xo.py"
