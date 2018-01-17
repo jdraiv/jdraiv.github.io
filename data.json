@@ -22,7 +22,7 @@
       }
     ],
 
-    "Game": [
+    "Games": [
       {
         "name": "Snake",
         "link": "https://github.com/jdraiv/PySnake"
