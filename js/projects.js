@@ -1,23 +1,25 @@
-function getCategoryData(categoryName, projectContainer){
+
+function appendProjects(category, projectsContainer){
     let url = "https://raw.githubusercontent.com/jdraiv/jdraiv.github.io/master/data.json";
 
     fetch(url)
-        .then(function(data) {
-            // Return json data
+        .then((data) => {
             return data.json();
         })
-        .then(function(j) {
-            let jsonData = j[0][categoryName];
-            // Remove li elements
-            $(projectContainer).empty();
-            for (let dic of jsonData) {
-                // Append new data
-                $(projectContainer).append(`<li class="project-li"><a href="${dic['link']}" target="_blank">${dic['name']}</a></li>`);
+        .then((j) => {
+            let jsonData = j[0];
+
+            for (let item of Object.entries(jsonData)) {
+                if (item[0] === category){
+                    $(`#${projectsContainer}`).empty();
+                    for (let value of item[1]) {
+
+                        $(`#${projectsContainer}`).append(`<li class="project-li"><a class="project-a" href="${value['link']}" target="_blank">${value['name']}</a></li>`)
+                    }
+                }
             }
         })
-        .catch(function(){
-            // Error
-            console.log("Error");
-        });
-
+        .catch(() => {
+            console.log("Error")
+        })
 }
