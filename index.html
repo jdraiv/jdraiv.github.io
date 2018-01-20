@@ -1,84 +1,85 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Jdraiv</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Welcome</title>
 
-    <!-- Css call -->
-    <link rel="stylesheet" type="text/css" href="css/homepage.css" />
-    <link rel="stylesheet" type="text/css" href="css/nav.css"/>
-    <link rel="stylesheet" type="text/css" href="css/star.css"/>
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <!-- Css Files -->
 
-    <!--Jquery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/stars.css">
 
+        <!--Jquery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
+        <!-- Fonticon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
     </head>
 
     <body>
-        <div class="webpage-container">
-            <section class="front-page-section">
-                <div class="front-page-container">
-                    <div class="navbar-container">
-                        <ul id="navbar-items-container">
-                            <li class="nav-item"><a class="navbar-link-item" href="#projects-page-section">Projects</a></li>
-                        </ul>
-                    </div>
 
-                    <div class="front-page-text">
-                        <header id="front-page-header">Welcome</header>
-                        <h4 id="my-info" style="text-align: center">Jdraiv, Software Developer</h4>
-                        <div style="text-align: center">
-                            <button class="github-btn" onclick="window.open('https://github.com/jdraiv', '_blank');">Github</button>
-                        </div>
+        <div class="page-container">
+            <section id="intro-section">
+                <div id="intro-section-container">
+                    <a id="projects-link" href="#projects-section">Projects</a>
+                    <h1 class="intro-text" id="header">Welcome</h1>
+                    <h6 class="intro-text" id="sub-header">Jdraiv, Software Developer</h6>
+
+                    <div class="github-btn-container">
+                        <button class="btn" id="github-btn" onclick="window.open('https://github.com/jdraiv', '_blank');">Github</button>
+
                     </div>
                 </div>
             </section>
 
-            <section id="projects-page-section">
-                <div class="projects-page-container">
-                    <div class="project-categories-container">
-                        <h1 id="project-categories-header">Categories</h1>
-                        <ul id="categories-ul">
-                            <!-- Automate this -->
-                            <li><button class="categories-btn" onclick="getCategoryData('web-apps', '#projects-ul')">Web Apps</button></li>
-                            <li><button class="categories-btn" onclick="getCategoryData('games', '#projects-ul')">Games</button></li>
-                            <li><button class="categories-btn" onclick="getCategoryData('other', '#projects-ul')">Other</button></li>
-                        </ul>
+            <section id="projects-section">
+                <div id="projects-section-container">
+
+                    <div id="categories-container">
+                        <div class="category-flex-item">
+                            <button class="category-btn" onclick="appendProjects('Webpages','projects-ul')">Webpages</button>
+                        </div>
+
+                        <div class="category-flex-item">
+                            <button class="category-btn" onclick="appendProjects('Games', 'projects-ul')">Games</button>
+                        </div>
+
+                        <div class="category-flex-item">
+                            <button class="category-btn" onclick="appendProjects('Other', 'projects-ul')">Other</button>
+                        </div>
 
                     </div>
 
-                    <div class="project-names-container">
-                        <h1 id="project-names-header">Projects</h1>
+                    <div id="projects-container">
+                        <h1 id="projects-header">Projects</h1>
 
                         <ul id="projects-ul">
-
                         </ul>
                     </div>
 
                 </div>
             </section>
 
-            <section id="footer">
-                <div class="footer-container">
-                    <h5 class="footer-copyright" id="footer-date" href="https://github.com/jdraiv"></h5>
+            <section id="footer-section">
+                <div id="footer-section-container">
+                    <h4 class="footer-copyright" id="footer-date"></h4>
 
                 </div>
             </section>
         </div>
-        
+
+    </body>
 
     <script type="text/javascript" src="/js/stars.js"></script>
     <script type="text/javascript" src="/js/projects.js"></script>
     <script type="text/javascript" src="/js/date.js"></script>
 
-    </body>
 </html>
