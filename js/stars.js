@@ -1,13 +1,15 @@
 function randomPositions(range){
-    function roundNumber(num){
-        return Math.round(num);
+
+    function roundNumber(num) {
+        return Math.round(num)
     }
 
     // Positions container
     let positions = [];
-
     let count = 0;
+
     while (count <= range){
+
         // Random positions variables
         let ranWidth = roundNumber(Math.random() * (0, 99));
         let ranHeight = roundNumber(Math.random() * (0, 99));
@@ -23,7 +25,7 @@ function randomPositions(range){
 }
 
 function appendDivs(containerName, positionsArray){
-    let divsContainer = document.getElementsByClassName(containerName);
+    let divsContainer = document.getElementById(containerName);
 
     for (let array of positionsArray){
 
@@ -39,10 +41,10 @@ function appendDivs(containerName, positionsArray){
             'height': `${array[2]}px`
         });
 
-        newStar.appendTo(containerName);
+        newStar.appendTo(divsContainer);
     }
 }
 
 
-appendDivs(".front-page-container", randomPositions(35));
-appendDivs(".footer-container", randomPositions(35));
+appendDivs("intro-section-container", randomPositions(35));
+
