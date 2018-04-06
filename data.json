@@ -13,10 +13,6 @@
         "link": "https://mypyweatherapp.herokuapp.com/"
       },
       {
-        "name": "TODO",
-        "link": "https://codepen.io/Jdraiv/full/JryveY/"
-      },
-      {
         "name": "Not Hotdog",
         "link": "https://nothotdog.glitch.me/"
       }
@@ -30,13 +26,10 @@
     ],
 
     "Other": [
-      {
-        "name": "XO Bot",
-        "link": "https://github.com/jdraiv/Sai/blob/master/xo/xo.py"
-      },
+
       {
         "name": "Flask Auth",
-        "link": "https://github.com/jdraiv/FlaskL"
+        "link": "https://github.com/jdraiv/FlaskAuth"
       }
     ]
 
